@@ -18,12 +18,12 @@ os.makedirs(model_dir, exist_ok=True)
 
 #################################### Trainingsdaten
 # Datenpfade
-pathHistorisch = '/Users/felixroeder/Documents/Stromverbrauch Vorhersage/Data/Regionsdaten 17-22'
-weather_data_path = "/Users/felixroeder/Documents/Stromverbrauch Vorhersage/Data/Wetterdaten.xlsx"
-holiday_data_path = "/Users/felixroeder/Documents/Stromverbrauch Vorhersage/Data/FeiertageDE.xlsx"
-einwohner_data_path = "/Users/felixroeder/Documents/Stromverbrauch Vorhersage/Data/Bevölkerung17-22.xlsx"
-elektroKraftwagen_data_path = "/Users/felixroeder/Documents/Stromverbrauch Vorhersage/Data/NeuzulassungenKraftfahrt17-22.xlsx"
-importexport_data_path = "/Users/felixroeder/Documents/Stromverbrauch Vorhersage/Data/ExportImport17-22.xlsx"
+pathHistorisch = 'Data/Regionsdaten 17-22'
+weather_data_path = "Data/Wetterdaten.xlsx"
+holiday_data_path = "Data/FeiertageDE.xlsx"
+einwohner_data_path = "Data/Bevölkerung17-22.xlsx"
+elektroKraftwagen_data_path = "Data/NeuzulassungenKraftfahrt17-22.xlsx"
+importexport_data_path = "Data/ExportImport17-22.xlsx"
 
 files = [f for f in os.listdir(pathHistorisch) if f.endswith('.xlsx')]
 
@@ -84,7 +84,7 @@ df_all['Wochentag'] = df_all.index.weekday
 saved_df = df_all.copy()
 
 ##################################### Testdaten 2023
-data_path_test = '/Users/felixroeder/Documents/Stromverbrauch Vorhersage/Data/Regionsdaten 23'
+data_path_test = 'Data/Regionsdaten 23'
 
 files_test = [f for f in os.listdir(data_path_test) if f.endswith('.xlsx')]
 
