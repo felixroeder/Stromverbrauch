@@ -5,3 +5,4 @@ os-sys
 joblib
 scikit-learn
 xgboost
+openpyxl
